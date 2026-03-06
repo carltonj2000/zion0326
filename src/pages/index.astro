@@ -4,13 +4,13 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<main
-		class="max-w-2xl mx-auto flex flex-col items-center bg-violet-50 h-screen"
+		class="max-w-2xl mx-auto flex flex-col items-center bg-violet-50 h-full"
 	>
 		<div
 			class="flex items-center justify-between w-full bg-violet-300 px-2 py-1 mb-3"
 		>
 			<img src="/zion.webp" alt="Ronni" width={48} class="rounded-full" />
-			<h1 class="text-2xl font-semibold">Rebecca's Birthday In Zion</h1>
+			<h1 class="text-xl font-semibold">Rebecca's Birthday In Zion</h1>
 			<img src="/critr3.webp" alt="rope" width={48} />
 		</div>
 
@@ -24,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
 			<tbody>
 				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
 					<td class="py-1 px-2">
-            <p>Saturday</p>
+						<p>Saturday</p>
 						<a href="https://ropewiki.com/Dothraki" class="underline">
 							Dothraki Canyon
 						</a>
@@ -42,7 +42,7 @@ import Layout from "../layouts/Layout.astro";
 				</tr>
 				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
 					<td class="py-1 px-2">
-            <p>Sunday</p>
+						<p>Sunday</p>
 						<a
 							href="https://www.mountainproject.com/area/106148102/lady-mountain"
 							class="underline">Lady Mountain</a
@@ -65,7 +65,7 @@ import Layout from "../layouts/Layout.astro";
 				</tr>
 				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
 					<td class="py-1 px-2">
-            <p>Monday</p> 
+						<p>Monday</p>
 						<a href="https://ropewiki.com/Behunin_Canyon" class="underline">
 							Behunin Canyon
 						</a>
@@ -115,12 +115,22 @@ import Layout from "../layouts/Layout.astro";
 						Can do the first two or three or just the last one in one day.
 					</li>
 					<li>
-						Hidden Star Canyon will require a wetsuit/drysuit for the pothole escape.
+						Hidden Star Canyon will require a wetsuit/drysuit for the pothole
+						escape.
 					</li>
 				</ul>
 			</li>
-      <li>The <a href="https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm" class="underline">Zion Shuttle</a> is operational as of Saturday 3/7/26.</li>
-      <li><a href="https://www.zioncanyonhotsprings.com/" class="underline">Zion Canyon Hot Springs</a></li>
+			<li>
+				The <a
+					href="https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm"
+					class="underline">Zion Shuttle</a
+				> is operational as of Saturday 3/7/26.
+			</li>
+			<li>
+				<a href="https://www.zioncanyonhotsprings.com/" class="underline"
+					>Zion Canyon Hot Springs</a
+				>
+			</li>
 		</ul>
 	</main>
 </Layout>
