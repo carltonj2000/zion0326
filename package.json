@@ -6,9 +6,21 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen-pwa": "pwa-assets-generator",
+    "docker:build": "docker build -t zion0326_i .",
+    "docker:dev": "docker run --name zion0326 -d -p 8080:80 zion0326_i",
+    "docker:compose:up": "echo docker compose up -d",
+    "docker:compose:restart": "echo docker compose up -d --no-deps zion0326_i ."
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.17.1",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^1.0.2",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }

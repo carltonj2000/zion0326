@@ -1,17 +1,94 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<main
+		class="max-w-2xl mx-auto flex flex-col items-center bg-violet-50 h-screen"
+	>
+		<div
+			class="flex items-center justify-between w-full bg-violet-300 px-2 py-1 mb-3"
+		>
+			<img src="/zion.webp" alt="Ronni" width={48} class="rounded-full" />
+			<h1 class="text-2xl font-semibold">Rebecca's Birthday In Zion</h1>
+			<img src="/critr3.webp" alt="rope" width={48} />
+		</div>
+
+		<table>
+			<thead>
+				<tr class="bg-violet-300 text-left">
+					<th class="py-2 px-3">Date</th>
+					<th class="py-2 px-3">Activity</th>
+					<th class="py-2 px-3">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
+					<td class="py-1 px-2">Saturday</td>
+					<td class="py-1 px-2">
+						<a href="" class="underline">Dothraki Canyon</a>
+					</td>
+					<td class="py-1 px-2">
+						<p>5:30 CJ leaves Vegas</p>
+						<p>7:30 Pick up Rebeca and Sandy</p>
+						<p>8:30 Start Canyon</p>
+						<p>11:30 Canyon Drop In</p>
+						<p>4:30 Finish Canyon</p>
+					</td>
+				</tr>
+				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
+					<td class="py-1 px-2">Sunday</td>
+					<td class="py-1 px-2">
+						<a href="" class="underline">Lady Mountain</a>
+					</td>
+					<td class="py-1 px-2">
+						<div></div>
+					</td>
+				</tr>
+				<tr class="even:bg-violet-100 odd:bg-violet-200 text-left">
+					<td class="py-1 px-2">Monday</td>
+					<td class="py-1 px-2">
+						<a href="" class="underline">Behunin Canyon</a>
+					</td>
+					<td class="py-1 px-2">
+						<div></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<ul class="list-disc list-inside mt-4 px-2">
+			<li>The shuttle in Zion is operational as of Saturday 3/7/26.</li>
+			<li>
+				Optional Sunday canyons
+				<ul class="list-disc list-inside pl-3">
+					<li>
+						<a
+							href="https://ropewiki.com/Yankee_Doodle_Hollow"
+							class="underline"
+						>
+							Yankee Doodle Hollow
+						</a> (1 mile, 5 raps, 75 ft max, 240 ft vertical),
+					</li>
+					<li>
+						<a href="https://ropewiki.com/Boltergeist_Canyon" class="underline">
+							Boltergeist Canyon
+						</a> (1.1 mile, 6 raps, 150 ft max),
+					</li>
+					<li>
+						<a href="https://ropewiki.com/Hidden_Star_Canyon" class="underline">
+							Hidden Star Canyon
+						</a> (1.2 miles, 2 raps, 200 ft max, 500 ft vertical, keeper pot hole)
+						or
+					</li>
+					<li>
+						<a href="https://ropewiki.com/Pictograph_Canyon" class="underline">
+							Pictograph Canyon
+						</a> (3 miles, 8 raps, 140 max, 1000 ft vertical).
+					</li>
+					<li>Can do first two or three or just last one.</li>
+				</ul>
+			</li>
+		</ul>
+	</main>
+</Layout>
